@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Access the Cerisee Student Management System portal. Login to manage student profiles, attendance, grades, and payments.">
+  <title>Cerisee Portal - Login | ARYA College of Engineering & I.T.</title>
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/login.css">
+  
+  <!-- Inline Style Override for Desktop Screen Fit (Bypasses CSS caching) -->
+  <style>
+    @media (min-width: 769px) {
+      html, body {
+        height: 100vh !important;
+        max-height: 100vh !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      
+      .login-wrapper {
+        height: calc(100vh - 70px) !important;
+        min-height: 0 !important;
+        overflow: hidden !important;
+      }
+      
+      .left-panel {
+        padding: 24px 40px !important;
+        height: 100% !important;
+        box-sizing: border-box !important;
+      }
+      
+      .right-panel {
+        padding: 16px !important;
+        height: 100% !important;
+        box-sizing: border-box !important;
+        overflow-y: auto !important;
+      }
+      
+      .login-card {
+        padding: 20px 24px !important;
+        margin: auto !important;
+      }
+      
+      .client-logo-container {
+        margin-bottom: 12px !important;
+        padding-bottom: 8px !important;
+        gap: 12px !important;
+      }
+      
+      .crest-logo {
+        width: 48px !important;
+        height: 48px !important;
+      }
+      
+      .client-title {
+        font-size: 20px !important;
+      }
+      
+      .powered-by {
+        margin-bottom: 12px !important;
+      }
+      
+      .login-intro {
+        margin-bottom: 12px !important;
+      }
+      
+      .login-greeting {
+        font-size: 18px !important;
+      }
+      
+      .form-group {
+        margin-bottom: 8px !important;
+      }
+      
+      .form-input {
+        padding: 10px 12px 10px 38px !important;
+        font-size: 13px !important;
+      }
+      
+      .input-icon {
+        left: 12px !important;
+        font-size: 13px !important;
+      }
+      
+      .form-options {
+        margin-bottom: 12px !important;
+        font-size: 12px !important;
+      }
+      
+      .btn-login-submit {
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+      }
+      
+      .help-box {
+        margin-top: 12px !important;
+        padding: 8px 12px !important;
+        gap: 8px !important;
+      }
+      
+      .help-shield {
+        width: 24px !important;
+        height: 24px !important;
+      }
+      
+      .help-title {
+        font-size: 12px !important;
+      }
+      
+      .help-text {
+        font-size: 10px !important;
+      }
+      
+      .security-badge {
+        margin-top: 8px !important;
+        font-size: 10px !important;
+      }
+      
+      .login-footer {
+        height: 70px !important;
+        padding: 10px 20px !important;
+        box-sizing: border-box !important;
+        flex-shrink: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+      }
+
+      .info-badge-icon {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 15px !important;
+      }
+      
+      .info-badge-text strong {
+        font-size: 12px !important;
+      }
+      
+      .info-badge-text span {
+        font-size: 10px !important;
+      }
+      
+      .info-badges {
+        gap: 30px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-wrapper">
+    <!-- Left Panel (Branding, Features, Stats) -->
+    <div class="left-panel">
+      <!-- Dark overlay with tint -->
+      <div class="panel-overlay"></div>
+      
+      <!-- Top Brand Logo -->
+      <div class="brand-header">
+        <a href="index.html" class="logo-container">
+          <img src="assets/logo.png" alt="Cerisee Logo" class="main-logo-img">
+        </a>
+      </div>
+
+      <!-- Center Promo Text -->
+      <div class="promo-content">
+        <h1 class="promo-title">
+          Simplify Management.<br>
+          <span class="text-primary-glow">Empower Education.</span>
+        </h1>
+        <p class="promo-desc">
+          Cerisee is a complete Student Management System designed to automate and streamline academic and administrative operations in one secure platform.
+        </p>
+
+        <!-- Horizontal Highlight Cards -->
+        <div class="highlight-cards">
+          <div class="highlight-card">
+            <div class="highlight-icon"><i class="fa-solid fa-user-gear"></i></div>
+            <div class="highlight-label">Centralized Management</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="highlight-label">Secure & Reliable</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="highlight-label">Smart Insights & Analytics</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Mini Stats Row -->
+      <div class="panel-stats">
+        <div class="panel-stat">
+          <span class="panel-stat-num">500+</span>
+          <span class="panel-stat-lbl">Institutions</span>
+        </div>
+        <div class="panel-stat">
+          <span class="panel-stat-num">50,000+</span>
+          <span class="panel-stat-lbl">Students</span>
+        </div>
+        <div class="panel-stat">
+          <span class="panel-stat-num">3,000+</span>
+          <span class="panel-stat-lbl">Teachers</span>
+        </div>
+        <div class="panel-stat">
+          <span class="panel-stat-num">99.9%</span>
+          <span class="panel-stat-lbl">Uptime</span>
+        </div>
+        <div class="panel-stat">
+          <span class="panel-stat-num">100%</span>
+          <span class="panel-stat-lbl">Secure</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Panel (Login Container) -->
+    <div class="right-panel">
+      <!-- Login Card -->
+      <div class="login-card">
+        <!-- Client Logo (ARYA College of Engineering) -->
+        <div class="client-logo-container">
+          <svg class="crest-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- Shield Outline -->
+            <path d="M20 15 Q50 10 80 15 Q80 55 50 85 Q20 55 20 15 Z" fill="none" stroke="#002B49" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M24 19 Q50 14 76 19 Q76 52 50 80 Q24 52 24 19 Z" fill="none" stroke="#C0001D" stroke-width="2"/>
+            
+            <!-- Pillars (representing Academy/Temple) -->
+            <rect x="36" y="44" width="6" height="24" fill="#002B49" rx="1"/>
+            <rect x="47" y="44" width="6" height="24" fill="#002B49" rx="1"/>
+            <rect x="58" y="44" width="6" height="24" fill="#002B49" rx="1"/>
+            <!-- Base and Top of Pillars -->
+            <rect x="32" y="68" width="36" height="4" fill="#002B49" rx="1"/>
+            <rect x="32" y="40" width="36" height="4" fill="#002B49" rx="1"/>
+            
+            <!-- Pediment (Triangle Top) -->
+            <polygon points="50,25 32,40 68,40" fill="#C0001D"/>
+            <polygon points="50,28 35,39 65,39" fill="#002B49"/>
+            
+            <!-- Laurel Wreath Around -->
+            <path d="M12 28 Q8 50 20 70" fill="none" stroke="#C0001D" stroke-width="2" stroke-linecap="round"/>
+            <path d="M88 28 Q92 50 80 70" fill="none" stroke="#C0001D" stroke-width="2" stroke-linecap="round"/>
+            <!-- Laurel leaves -->
+            <circle cx="10" cy="36" r="3" fill="#C0001D"/>
+            <circle cx="9" cy="46" r="3" fill="#C0001D"/>
+            <circle cx="11" cy="56" r="3" fill="#C0001D"/>
+            <circle cx="15" cy="65" r="3" fill="#C0001D"/>
+            <circle cx="90" cy="36" r="3" fill="#C0001D"/>
+            <circle cx="91" cy="46" r="3" fill="#C0001D"/>
+            <circle cx="89" cy="56" r="3" fill="#C0001D"/>
+            <circle cx="85" cy="65" r="3" fill="#C0001D"/>
+            
+            <!-- ESTD text background -->
+            <rect x="30" y="78" width="40" height="8" fill="#C0001D" rx="2"/>
+            <text x="50" y="85" font-family="'Outfit', sans-serif" font-size="6.5" font-weight="800" fill="#FFF" text-anchor="middle">ESTD. 2000</text>
+          </svg>
+          <div class="client-details">
+            <h2 class="client-title">ARYA</h2>
+            <h3 class="client-subtitle">COLLEGE OF ENGINEERING & I.T.</h3>
+            <p class="client-tagline">Excellence in Education. Innovation in Action.</p>
+          </div>
+        </div>
+
+        <!-- Powered By Cerisee -->
+        <div class="powered-by">
+          <span class="powered-text">Powered by</span>
+          <div class="powered-badge">
+            <svg class="cherry-logo-mini" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 45 C45 30 35 25 35 15 C35 15 50 15 55 25" stroke="#22C55E" stroke-width="8" fill="none"/>
+              <circle cx="38" cy="62" r="22" fill="#C0001D"/>
+              <circle cx="68" cy="58" r="18" fill="#C0001D"/>
+            </svg>
+            <span class="powered-brand">Cerisee</span>
+          </div>
+          <span class="powered-system">Student Management System</span>
+        </div>
+
+        <div class="login-intro">
+          <h2 class="login-greeting">Welcome Back!</h2>
+          <p class="login-instructions">Login to access your account</p>
+        </div>
+
+        <!-- Error Notification Container (for JS / Backend validation) -->
+        <div id="error-alert" class="alert alert-danger" style="display: none;">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <span class="alert-message">Incorrect User ID or Password.</span>
+        </div>
+
+        <!-- Login Form -->
+        <!-- Note: action points to login.php, method is POST as needed for backend integration -->
+        <form id="loginForm" action="login.php" method="POST">
+          <!-- User ID field -->
+          <div class="form-group">
+            <label for="username" class="form-label">User ID / Email</label>
+            <div class="input-wrapper">
+              <span class="input-icon"><i class="fa-regular fa-user"></i></span>
+              <input type="text" id="username" name="username" class="form-input" placeholder="Enter your user ID or email" required autocomplete="username">
+            </div>
+          </div>
+
+          <!-- Password field -->
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <div class="input-wrapper">
+              <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
+              <input type="password" id="password" name="password" class="form-input" placeholder="Enter your password" required autocomplete="current-password">
+              <button type="button" id="toggle-password-btn" class="toggle-password" aria-label="Toggle password visibility">
+                <i class="fa-regular fa-eye" id="eye-icon"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Form Options -->
+          <div class="form-options">
+            <label class="checkbox-container">
+              <input type="checkbox" id="remember" name="remember" class="custom-checkbox">
+              <span class="checkbox-checkmark"></span>
+              Remember me
+            </label>
+            <a href="forgot-password.html" class="forgot-link">Forgot Password?</a>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn-login-submit">
+            <span>Login</span>
+            <div class="btn-arrow-circle">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </button>
+        </form>
+
+        <!-- Help Info Box -->
+        <div class="help-box">
+          <div class="help-icon-wrapper">
+            <svg class="help-shield" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 20 Q50 15 80 20 Q80 60 50 85 Q20 60 20 20 Z" fill="none" stroke="#C0001D" stroke-width="8" stroke-linejoin="round"/>
+              <path d="M50 35 L50 55" stroke="#C0001D" stroke-width="8" stroke-linecap="round"/>
+              <circle cx="50" cy="67" r="4.5" fill="#C0001D"/>
+            </svg>
+          </div>
+          <div class="help-content">
+            <h4 class="help-title">Need Help?</h4>
+            <p class="help-text">Contact your administrator or IT support for assistance.</p>
+          </div>
+          <div class="help-headset"><i class="fa-solid fa-headset"></i></div>
+        </div>
+
+        <!-- Security Badge -->
+        <div class="security-badge">
+          <i class="fa-solid fa-lock"></i>
+          <span>Your data is 100% secure and protected</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Information Bar -->
+  <footer class="login-footer">
+    <div class="login-footer-container">
+      <div class="info-badges">
+        <div class="info-badge">
+          <span class="info-badge-icon"><i class="fa-solid fa-shield-halved"></i></span>
+          <div class="info-badge-text">
+            <strong>100% Secure</strong>
+            <span>Your data is safe with us</span>
+          </div>
+        </div>
+        <div class="info-badge">
+          <span class="info-badge-icon"><i class="fa-solid fa-headset"></i></span>
+          <div class="info-badge-text">
+            <strong>24x7 Support</strong>
+            <span>We are here to help</span>
+          </div>
+        </div>
+        <div class="info-badge">
+          <span class="info-badge-icon"><i class="fa-solid fa-server"></i></span>
+          <div class="info-badge-text">
+            <strong>Reliable Platform</strong>
+            <span>99.9% uptime guaranteed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright-socials">
+        <p class="login-copyright">&copy; 2024 Cerisee. All rights reserved.</p>
+        <div class="login-social-icons">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Login JS -->
+  <script src="js/login.js"></script>
+</body>
+</html>

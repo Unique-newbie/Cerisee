@@ -1,0 +1,107 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Color Palette */
+  --primary: #C0001D;          /* Crimson Red */
+  --primary-hover: #A00018;    /* Darker Red */
+  --primary-light: #FFF5F5;    /* Soft Red Tint */
+  --primary-glow: rgba(192, 0, 29, 0.15);
+  
+  --dark-bg: #111827;          /* Near black for footer */
+  --dark-text: #1F2937;        /* Very dark gray */
+  --light-bg: #F9FAFB;         /* Warm white */
+  --white: #FFFFFF;
+  
+  --text-main: #374151;        /* Cool gray for body */
+  --text-muted: #6B7280;       /* Lighter gray for caption */
+  --text-light: #9CA3AF;
+  
+  --border-color: #E5E7EB;
+  --border-focus: #FCA5A5;     /* Light red border for focus state */
+  
+  --success: #10B981;          /* Emerald Green */
+  --warning: #F59E0B;          /* Amber Yellow */
+  
+  /* Fonts */
+  --font-headings: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Layout Constraints */
+  --max-width: 1200px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base resets & utilities */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-main);
+  background-color: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Shared Main Logo Image Class */
+.main-logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+  transition: transform var(--transition-normal);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-container:hover .main-logo-img {
+  transform: scale(1.02);
+}
