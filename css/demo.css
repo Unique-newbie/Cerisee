@@ -4,7 +4,7 @@
 
 /* Main Hero section */
 .demo-hero-section {
-  padding: 60px 20px;
+  padding: 40px 20px 30px 20px;
   background-color: var(--light-bg);
   position: relative;
 }
@@ -354,7 +354,7 @@
   background-color: var(--white);
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
-  padding: 30px 20px;
+  padding: 20px 20px;
 }
 
 .demo-trust-container {
@@ -403,7 +403,7 @@
 
 /* Why Request a Demo? Section */
 .why-demo-section {
-  padding: 80px 20px;
+  padding: 40px 20px;
   background-color: var(--light-bg);
 }
 
@@ -418,7 +418,7 @@
   font-weight: 800;
   color: var(--dark-text);
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .why-demo-grid {
