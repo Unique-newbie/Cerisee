@@ -26,8 +26,44 @@
       <nav class="nav-menu">
         <ul class="nav-list">
           <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#features" class="nav-link">Features</a></li>
-          <li><a href="#modules" class="nav-link">Modules</a></li>
+          <li class="has-dropdown">
+            <a href="#features" class="nav-link">Features <i class="fa-solid fa-chevron-down" style="font-size:10px; margin-left:4px;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#features" data-feature="academics">Academics Management</a></li>
+              <li><a href="#features" data-feature="student">Student Management</a></li>
+              <li><a href="#features" data-feature="exams">Examination Management</a></li>
+              <li><a href="#features" data-feature="finance">Finance & Accounts</a></li>
+              <li><a href="#features" data-feature="placement">Placement Management</a></li>
+              <li><a href="#features" data-feature="library">Library Management</a></li>
+              <li><a href="#features" data-feature="hostel">Hostel Management</a></li>
+              <li><a href="#features" data-feature="transport">Transport Management</a></li>
+              <li><a href="#features" data-feature="hr">HR & Payroll</a></li>
+              <li><a href="#features" data-feature="admin">Administration</a></li>
+              <li><a href="#features" data-feature="reports">Reports & Analytics</a></li>
+              <li><a href="#features" data-feature="integration">Integration & Automation</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#modules" class="nav-link">Modules <i class="fa-solid fa-chevron-down" style="font-size:10px; margin-left:4px;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#modules" data-module="academics">Academics Management</a></li>
+              <li><a href="#modules" data-module="student">Student Management</a></li>
+              <li><a href="#modules" data-module="exams">Examination Management</a></li>
+              <li><a href="#modules" data-module="finance">Finance & Accounts</a></li>
+              <li><a href="#modules" data-module="placement">Placement Management</a></li>
+              <li><a href="#modules" data-module="library">Library Management</a></li>
+              <li><a href="#modules" data-module="hostel">Hostel Management</a></li>
+              <li><a href="#modules" data-module="transport">Transport Management</a></li>
+              <li><a href="#modules" data-module="hr">HR & Payroll</a></li>
+              <li><a href="#modules" data-module="admission">Admission Management</a></li>
+              <li><a href="#modules" data-module="communication">Communication</a></li>
+              <li><a href="#modules" data-module="helpdesk">Helpdesk & Support</a></li>
+              <li><a href="#modules" data-module="reports">Reports & Analytics</a></li>
+              <li><a href="#modules" data-module="admin">Administration</a></li>
+              <li><a href="#modules" data-module="mobile">Mobile App</a></li>
+              <li><a href="#modules" data-module="integration">Integration & Automation</a></li>
+            </ul>
+          </li>
           <li><a href="#pricing" class="nav-link">Pricing</a></li>
           <li><a href="#about" class="nav-link">About Us</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -37,7 +73,7 @@
       <!-- Nav Actions -->
       <div class="nav-actions">
         <a href="login.html" class="btn-login"><i class="fa-regular fa-user"></i> Login</a>
-        <a href="#contact" class="btn-cta">Request Demo</a>
+        <a href="request-demo.html" class="btn-cta">Request Demo</a>
       </div>
 
       <!-- Hamburger Menu for Mobile -->
@@ -115,163 +151,594 @@
       </div>
     </section>
 
-    <!-- Core Features Section -->
+    <!-- Features Section (12 Feature Suites with dropdowns) -->
     <section id="features" class="features-section">
       <div class="features-container">
-        <div class="features-grid">
-          <!-- Card 1 -->
-          <div class="feature-card">
-            <div class="feature-icon"><i class="fa-solid fa-user-graduate"></i></div>
-            <h3 class="feature-card-title">Student Information Management</h3>
-            <p class="feature-card-text">Maintain all student data in a centralized system.</p>
+        <div class="section-header">
+          <span class="section-badge">Powerful Features</span>
+          <h2 class="section-title">Everything You Need, All in One Platform</h2>
+          <p class="section-subtitle" style="max-width:650px; margin:15px auto 0 auto; color:var(--text-muted); font-size:16px;">
+            Cerisee ERP comes with 360° features to automate, simplify, and digitize your entire academic and administrative ecosystem.
+          </p>
+        </div>
+
+        <div class="features-suite-grid">
+          <!-- Feature 1 -->
+          <div class="feature-suite-card" id="feat-academics">
+            <div class="feature-suite-header">
+              <div class="feature-suite-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <h3 class="feature-suite-title">Academics Management</h3>
+            </div>
+            <p class="feature-suite-desc">Manage courses, curriculum, batches, timetables and academic activities seamlessly.</p>
+            <button class="btn-toggle-features">Explore Features <i class="fa-solid fa-chevron-down"></i></button>
+            
+            <div class="features-dropdown-list">
+              <ul>
+                <li><i class="fa-solid fa-circle-check"></i> Course & Curriculum Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Timetable Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Attendance Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Academic Calendar</li>
+                <li><i class="fa-solid fa-circle-check"></i> Internal Assessments</li>
+              </ul>
+            </div>
           </div>
-          <!-- Card 2 -->
-          <div class="feature-card">
-            <div class="feature-icon"><i class="fa-solid fa-calendar-check"></i></div>
-            <h3 class="feature-card-title">Attendance Tracking</h3>
-            <p class="feature-card-text">Monitor daily attendance in real-time.</p>
+
+          <!-- Feature 2 -->
+          <div class="feature-suite-card" id="feat-student">
+            <div class="feature-suite-header">
+              <div class="feature-suite-icon"><i class="fa-solid fa-user-graduate"></i></div>
+              <h3 class="feature-suite-title">Student Management</h3>
+            </div>
+            <p class="feature-suite-desc">360° student lifecycle management from admission to alumni with profile & leaves.</p>
+            <button class="btn-toggle-features">Explore Features <i class="fa-solid fa-chevron-down"></i></button>
+            
+            <div class="features-dropdown-list">
+              <ul>
+                <li><i class="fa-solid fa-circle-check"></i> Admission & Onboarding</li>
+                <li><i class="fa-solid fa-circle-check"></i> Student Profile Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Attendance & Leaves</li>
+                <li><i class="fa-solid fa-circle-check"></i> Mentoring & Counseling</li>
+                <li><i class="fa-solid fa-circle-check"></i> Alumni Management</li>
+              </ul>
+            </div>
           </div>
-          <!-- Card 3 -->
-          <div class="feature-card">
-            <div class="feature-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
-            <h3 class="feature-card-title">Fee Management</h3>
-            <p class="feature-card-text">Automate fee collection and track payments effortlessly.</p>
+
+          <!-- Feature 3 -->
+          <div class="feature-suite-card" id="feat-exams">
+            <div class="feature-suite-header">
+              <div class="feature-suite-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+              <h3 class="feature-suite-title">Examination Management</h3>
+            </div>
+            <p class="feature-suite-desc">Plan exams, create schedules, generate hall tickets and publish results transparently.</p>
+            <button class="btn-toggle-features">Explore Features <i class="fa-solid fa-chevron-down"></i></button>
+            
+            <div class="features-dropdown-list">
+              <ul>
+                <li><i class="fa-solid fa-circle-check"></i> Exam Scheduling</li>
+                <li><i class="fa-solid fa-circle-check"></i> Hall Tickets & Seating</li>
+                <li><i class="fa-solid fa-circle-check"></i> Online & Offline Exams</li>
+                <li><i class="fa-solid fa-circle-check"></i> Evaluation & Grading</li>
+                <li><i class="fa-solid fa-circle-check"></i> Results & Revaluation</li>
+              </ul>
+            </div>
           </div>
-          <!-- Card 4 -->
-          <div class="feature-card">
-            <div class="feature-icon"><i class="fa-solid fa-clipboard-list"></i></div>
-            <h3 class="feature-card-title">Examination Management</h3>
-            <p class="feature-card-text">Schedule exams, manage results, and generate reports.</p>
+
+          <!-- Feature 4 -->
+          <div class="feature-suite-card" id="feat-finance">
+            <div class="feature-suite-header">
+              <div class="feature-suite-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+              <h3 class="feature-suite-title">Finance & Accounts</h3>
+            </div>
+            <p class="feature-suite-desc">Automate fee collection, accounting, payroll, budgeting and financial reporting.</p>
+            <button class="btn-toggle-features">Explore Features <i class="fa-solid fa-chevron-down"></i></button>
+            
+            <div class="features-dropdown-list">
+              <ul>
+                <li><i class="fa-solid fa-circle-check"></i> Fee Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Accounting & Ledgers</li>
+                <li><i class="fa-solid fa-circle-check"></i> Payroll Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Budgeting & Forecasting</li>
+                <li><i class="fa-solid fa-circle-check"></i> Financial Reports</li>
+              </ul>
+            </div>
           </div>
-          <!-- Card 5 -->
-          <div class="feature-card">
-            <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
-            <h3 class="feature-card-title">Insightful Reports</h3>
-            <p class="feature-card-text">Get real-time insights and make data-driven decisions.</p>
+
+          <!-- Feature 5 -->
+          <div class="feature-suite-card" id="feat-placement">
+            <div class="feature-suite-header">
+              <div class="feature-suite-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <h3 class="feature-suite-title">Placement Management</h3>
+            </div>
+            <p class="feature-suite-desc">Streamline placements, internships, company recruiter drives and student eligibility.</p>
+            <button class="btn-toggle-features">Explore Features <i class="fa-solid fa-chevron-down"></i></button>
+            
+            <div class="features-dropdown-list">
+              <ul>
+                <li><i class="fa-solid fa-circle-check"></i> Student Eligibility Check</li>
+                <li><i class="fa-solid fa-circle-check"></i> Company Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Job Drives & Offers</li>
+                <li><i class="fa-solid fa-circle-check"></i> Internship Tracking</li>
+                <li><i class="fa-solid fa-circle-check"></i> Placement Analytics</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-suite-card" id="feat-library">
+            <div class="feature-suite-header">
+              <div class="feature-suite-icon"><i class="fa-solid fa-book"></i></div>
+              <h3 class="feature-suite-title">Library Management</h3>
+            </div>
+            <p class="feature-suite-desc">Digital library cataloging, barcode checks, member records, and e-resource access.</p>
+            <button class="btn-toggle-features">Explore Features <i class="fa-solid fa-chevron-down"></i></button>
+            
+            <div class="features-dropdown-list">
+              <ul>
+                <li><i class="fa-solid fa-circle-check"></i> Book & Journal Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Issue & Return Tracking</li>
+                <li><i class="fa-solid fa-circle-check"></i> E-Library Access</li>
+                <li><i class="fa-solid fa-circle-check"></i> Fine Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Library Analytics</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 7 -->
+          <div class="feature-suite-card" id="feat-hostel">
+            <div class="feature-suite-header">
+              <div class="feature-suite-icon"><i class="fa-solid fa-hotel"></i></div>
+              <h3 class="feature-suite-title">Hostel Management</h3>
+            </div>
+            <p class="feature-suite-desc">Manage hostel allocations, rooms, mess menus, visitor logs and maintenance tasks.</p>
+            <button class="btn-toggle-features">Explore Features <i class="fa-solid fa-chevron-down"></i></button>
+            
+            <div class="features-dropdown-list">
+              <ul>
+                <li><i class="fa-solid fa-circle-check"></i> Room Allocation</li>
+                <li><i class="fa-solid fa-circle-check"></i> Mess Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Visitor Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Hostel Fee Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Maintenance Requests</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 8 -->
+          <div class="feature-suite-card" id="feat-transport">
+            <div class="feature-suite-header">
+              <div class="feature-suite-icon"><i class="fa-solid fa-bus"></i></div>
+              <h3 class="feature-suite-title">Transport Management</h3>
+            </div>
+            <p class="feature-suite-desc">Efficient transport operations with real-time GPS tracking and route mapping.</p>
+            <button class="btn-toggle-features">Explore Features <i class="fa-solid fa-chevron-down"></i></button>
+            
+            <div class="features-dropdown-list">
+              <ul>
+                <li><i class="fa-solid fa-circle-check"></i> Route & Vehicle Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> GPS Live Tracking</li>
+                <li><i class="fa-solid fa-circle-check"></i> Transport Fee Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Driver Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Transport Reports</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 9 -->
+          <div class="feature-suite-card" id="feat-hr">
+            <div class="feature-suite-header">
+              <div class="feature-suite-icon"><i class="fa-solid fa-user-tie"></i></div>
+              <h3 class="feature-suite-title">HR & Payroll</h3>
+            </div>
+            <p class="feature-suite-desc">Manage staff information, salaries, leave, attendance records and appraisals.</p>
+            <button class="btn-toggle-features">Explore Features <i class="fa-solid fa-chevron-down"></i></button>
+            
+            <div class="features-dropdown-list">
+              <ul>
+                <li><i class="fa-solid fa-circle-check"></i> Employee Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Leave & Attendance</li>
+                <li><i class="fa-solid fa-circle-check"></i> Payroll & Salary Slips</li>
+                <li><i class="fa-solid fa-circle-check"></i> Performance Appraisal</li>
+                <li><i class="fa-solid fa-circle-check"></i> HR Reports</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 10 -->
+          <div class="feature-suite-card" id="feat-admin">
+            <div class="feature-suite-header">
+              <div class="feature-suite-icon"><i class="fa-solid fa-user-shield"></i></div>
+              <h3 class="feature-suite-title">Administration</h3>
+            </div>
+            <p class="feature-suite-desc">Centralized administration for smooth and secure institutional operations.</p>
+            <button class="btn-toggle-features">Explore Features <i class="fa-solid fa-chevron-down"></i></button>
+            
+            <div class="features-dropdown-list">
+              <ul>
+                <li><i class="fa-solid fa-circle-check"></i> Role & Access Control</li>
+                <li><i class="fa-solid fa-circle-check"></i> Workflow Automation</li>
+                <li><i class="fa-solid fa-circle-check"></i> Document Management</li>
+                <li><i class="fa-solid fa-circle-check"></i> Communication Center</li>
+                <li><i class="fa-solid fa-circle-check"></i> Audit Logs</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 11 -->
+          <div class="feature-suite-card" id="feat-reports">
+            <div class="feature-suite-header">
+              <div class="feature-suite-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <h3 class="feature-suite-title">Reports & Analytics</h3>
+            </div>
+            <p class="feature-suite-desc">Data-driven insights and AI forecasts for better decisions and performance.</p>
+            <button class="btn-toggle-features">Explore Features <i class="fa-solid fa-chevron-down"></i></button>
+            
+            <div class="features-dropdown-list">
+              <ul>
+                <li><i class="fa-solid fa-circle-check"></i> Custom Reports Exporter</li>
+                <li><i class="fa-solid fa-circle-check"></i> Dashboard Analytics</li>
+                <li><i class="fa-solid fa-circle-check"></i> Data Visualization</li>
+                <li><i class="fa-solid fa-circle-check"></i> Export & Data Sharing</li>
+                <li><i class="fa-solid fa-circle-check"></i> Predictive Analytics (AI)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 12 -->
+          <div class="feature-suite-card" id="feat-integration">
+            <div class="feature-suite-header">
+              <div class="feature-suite-icon"><i class="fa-solid fa-sliders"></i></div>
+              <h3 class="feature-suite-title">Integration & Automation</h3>
+            </div>
+            <p class="feature-suite-desc">Seamless third-party integrations and automated workflows to reduce manual errors.</p>
+            <button class="btn-toggle-features">Explore Features <i class="fa-solid fa-chevron-down"></i></button>
+            
+            <div class="features-dropdown-list">
+              <ul>
+                <li><i class="fa-solid fa-circle-check"></i> API & Webhooks Integrations</li>
+                <li><i class="fa-solid fa-circle-check"></i> Third-party Software Sync</li>
+                <li><i class="fa-solid fa-circle-check"></i> Automated Admin Workflows</li>
+                <li><i class="fa-solid fa-circle-check"></i> Email & SMS Automation</li>
+                <li><i class="fa-solid fa-circle-check"></i> AI-Powered Automation</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Statistics Banner -->
+    <!-- Why Institutions Love Cerisee (Features Stats Row) -->
     <section class="stats-section">
       <div class="stats-container">
-        <!-- Stat Item 1 -->
-        <div class="stat-item">
-          <div class="stat-icon"><i class="fa-solid fa-hotel"></i></div>
-          <div class="stat-info">
-            <div class="stat-number" data-target="500">0</div>
-            <div class="stat-label">Institutions</div>
+        <h3 class="stats-banner-title" style="width:100%; text-align:center; margin-bottom:20px; font-family:var(--font-headings); font-size:22px; font-weight:800; color:var(--dark-text);">Why Institutions Love Cerisee</h3>
+        <div class="stats-row" style="display:flex; justify-content:space-around; width:100%; flex-wrap:wrap; gap:20px;">
+          <!-- Stat 1 -->
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-school"></i></div>
+            <div class="stat-info">
+              <div class="stat-number" data-target="500">0</div>
+              <div class="stat-label">Institutions</div>
+            </div>
           </div>
-        </div>
-        <!-- Stat Item 2 -->
-        <div class="stat-item">
-          <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
-          <div class="stat-info">
-            <div class="stat-number" data-target="50000">0</div>
-            <div class="stat-label">Students</div>
+          <!-- Stat 2 -->
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+            <div class="stat-info">
+              <div class="stat-number" data-target="1000000">0</div>
+              <div class="stat-label">Users</div>
+            </div>
           </div>
-        </div>
-        <!-- Stat Item 3 -->
-        <div class="stat-item">
-          <div class="stat-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
-          <div class="stat-info">
-            <div class="stat-number" data-target="3000">0</div>
-            <div class="stat-label">Teachers</div>
+          <!-- Stat 3 -->
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="stat-info">
+              <div class="stat-number" data-target="25">0</div>
+              <div class="stat-label">Countries</div>
+            </div>
           </div>
-        </div>
-        <!-- Stat Item 4 -->
-        <div class="stat-item">
-          <div class="stat-icon"><i class="fa-solid fa-server"></i></div>
-          <div class="stat-info">
-            <div class="stat-number" data-target="99.9" data-decimals="1">0</div>
-            <div class="stat-label">Uptime</div>
-          </div>
-        </div>
-        <!-- Stat Item 5 -->
-        <div class="stat-item">
-          <div class="stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <div class="stat-info">
-            <div class="stat-number" data-target="100">0</div>
-            <div class="stat-label">Secure</div>
+          <!-- Stat 4 -->
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-smile"></i></div>
+            <div class="stat-info">
+              <div class="stat-number" data-target="98" data-decimals="0">0</div>
+              <div class="stat-label">Satisfaction</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Powerful Modules Section -->
+    <!-- Explore Cerisee ERP Modules (16 Modules Section with dropdowns) -->
     <section id="modules" class="modules-section">
       <div class="modules-container">
         <div class="section-header">
-          <span class="section-badge">Powerful Modules</span>
-          <h2 class="section-title">Everything You Need, All in One Place</h2>
+          <span class="section-badge">ERP Modules</span>
+          <h2 class="section-title">Explore Cerisee ERP Modules</h2>
+          <p class="section-subtitle" style="max-width:650px; margin:15px auto 0 auto; color:var(--text-muted); font-size:16px;">
+            Integrated. Intelligent. Impactful. Built to automate every administrative function.
+          </p>
         </div>
 
-        <div class="modules-grid">
+        <div class="modules-suite-grid">
           <!-- Module 1 -->
-          <div class="module-card">
-            <div class="module-icon"><i class="fa-solid fa-user-graduate"></i></div>
-            <h3 class="module-title">Students</h3>
-            <p class="module-text">Manage student profiles, admissions, documents and more.</p>
+          <div class="module-card-v2" id="mod-academics">
+            <div class="module-card-num">01</div>
+            <div class="module-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3 class="module-card-title">1. Academics Management</h3>
+            <p class="module-card-desc">Manage courses, curriculum, batches, timetables, attendance and assessments.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Course & Batch Setup</li>
+                <li>Timetable Generation</li>
+                <li>Academic Calendar</li>
+                <li>Faculty Allocations</li>
+              </ul>
+            </div>
           </div>
+
           <!-- Module 2 -->
-          <div class="module-card">
-            <div class="module-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
-            <h3 class="module-title">Teachers</h3>
-            <p class="module-text">Maintain teacher information, subjects and class allocation.</p>
+          <div class="module-card-v2" id="mod-student">
+            <div class="module-card-num">02</div>
+            <div class="module-card-icon"><i class="fa-solid fa-user-graduate"></i></div>
+            <h3 class="module-card-title">2. Student Management</h3>
+            <p class="module-card-desc">360° student lifecycle management from admission to alumni with profile details.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Student Profile Repository</li>
+                <li>Leaves & Attendance Logs</li>
+                <li>Documents Locker</li>
+                <li>Alumni Directories</li>
+              </ul>
+            </div>
           </div>
+
           <!-- Module 3 -->
-          <div class="module-card">
-            <div class="module-icon"><i class="fa-solid fa-calendar-days"></i></div>
-            <h3 class="module-title">Attendance</h3>
-            <p class="module-text">Track attendance accurately with smart analytics.</p>
+          <div class="module-card-v2" id="mod-exams">
+            <div class="module-card-num">03</div>
+            <div class="module-card-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h3 class="module-card-title">3. Examination Management</h3>
+            <p class="module-card-desc">Plan exams, create schedules, generate hall tickets, and evaluate marks.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Exam Schedule Setup</li>
+                <li>Hall Tickets Generator</li>
+                <li>Marks Entry Dashboard</li>
+                <li>Report Cards Publisher</li>
+              </ul>
+            </div>
           </div>
+
           <!-- Module 4 -->
-          <div class="module-card">
-            <div class="module-icon"><i class="fa-solid fa-credit-card"></i></div>
-            <h3 class="module-title">Fees</h3>
-            <p class="module-text">Manage fee structures, collections, dues and payment history.</p>
+          <div class="module-card-v2" id="mod-finance">
+            <div class="module-card-num">04</div>
+            <div class="module-card-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+            <h3 class="module-card-title">4. Finance & Accounts</h3>
+            <p class="module-card-desc">Automate fee collection, accounting, payroll, budgeting and real-time reports.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Fee Structure & Collection</li>
+                <li>Online Payment Gateways</li>
+                <li>Payroll & Sal-Slips</li>
+                <li>Ledgers & Expense Logs</li>
+              </ul>
+            </div>
           </div>
+
           <!-- Module 5 -->
-          <div class="module-card">
-            <div class="module-icon"><i class="fa-solid fa-file-invoice"></i></div>
-            <h3 class="module-title">Examinations</h3>
-            <p class="module-text">Create exams, enter marks and publish results.</p>
+          <div class="module-card-v2" id="mod-placement">
+            <div class="module-card-num">05</div>
+            <div class="module-card-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h3 class="module-card-title">5. Placement Management</h3>
+            <p class="module-card-desc">Manage student eligibility, recruiters, job postings, interview stages and analytics.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Student Profile Exporter</li>
+                <li>Company Relations Panel</li>
+                <li>Job Drives Management</li>
+                <li>Interviews Tracking</li>
+              </ul>
+            </div>
           </div>
+
           <!-- Module 6 -->
-          <div class="module-card">
-            <div class="module-icon"><i class="fa-solid fa-book"></i></div>
-            <h3 class="module-title">Library</h3>
-            <p class="module-text">Manage books, members, issue/return and fine.</p>
+          <div class="module-card-v2" id="mod-library">
+            <div class="module-card-num">06</div>
+            <div class="module-card-icon"><i class="fa-solid fa-book"></i></div>
+            <h3 class="module-card-title">6. Library Management</h3>
+            <p class="module-card-desc">Digital library cataloging, barcode checks, member accounts and e-resources.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Book Barcoding & Inventory</li>
+                <li>Issue & Return Logger</li>
+                <li>Overdue Fine Calculator</li>
+                <li>E-Resources Hub</li>
+              </ul>
+            </div>
           </div>
+
           <!-- Module 7 -->
-          <div class="module-card">
-            <div class="module-icon"><i class="fa-solid fa-bus"></i></div>
-            <h3 class="module-title">Transport</h3>
-            <p class="module-text">Manage vehicles, routes, drivers and transportation.</p>
+          <div class="module-card-v2" id="mod-hostel">
+            <div class="module-card-num">07</div>
+            <div class="module-card-icon"><i class="fa-solid fa-hotel"></i></div>
+            <h3 class="module-card-title">7. Hostel Management</h3>
+            <p class="module-card-desc">Handle room allocation, mess menus, visitor logs, and warden administration.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Room Allocations Grid</li>
+                <li>Mess Timetable & Billing</li>
+                <li>Visitor Register</li>
+                <li>Complaint Ticket Hub</li>
+              </ul>
+            </div>
           </div>
+
           <!-- Module 8 -->
-          <div class="module-card">
-            <div class="module-icon"><i class="fa-solid fa-hotel"></i></div>
-            <h3 class="module-title">Hostel</h3>
-            <p class="module-text">Manage hostel rooms, allotments, mess and students.</p>
+          <div class="module-card-v2" id="mod-transport">
+            <div class="module-card-num">08</div>
+            <div class="module-card-icon"><i class="fa-solid fa-bus"></i></div>
+            <h3 class="module-card-title">8. Transport Management</h3>
+            <p class="module-card-desc">Route planning, vehicle checklists, driver assignments and GPS tracking.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Vehicles & Routes Setup</li>
+                <li>Live GPS Tracking</li>
+                <li>Transport Fee Invoices</li>
+                <li>Driver App Access</li>
+              </ul>
+            </div>
           </div>
+
           <!-- Module 9 -->
-          <div class="module-card">
-            <div class="module-icon"><i class="fa-solid fa-chart-pie"></i></div>
-            <h3 class="module-title">Reports</h3>
-            <p class="module-text">Generate detailed reports with advanced filters.</p>
+          <div class="module-card-v2" id="mod-hr">
+            <div class="module-card-num">09</div>
+            <div class="module-card-icon"><i class="fa-solid fa-user-tie"></i></div>
+            <h3 class="module-card-title">9. HR & Payroll</h3>
+            <p class="module-card-desc">Manage employee files, attendance logs, payroll calculations and HR reports.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Employee Onboarding</li>
+                <li>Leaves & Attendance Logs</li>
+                <li>Salary Slips Generator</li>
+                <li>Performance Appraisals</li>
+              </ul>
+            </div>
           </div>
+
           <!-- Module 10 -->
-          <div class="module-card">
-            <div class="module-icon"><i class="fa-solid fa-sliders"></i></div>
-            <h3 class="module-title">Settings</h3>
-            <p class="module-text">Customize system settings to match your institution.</p>
+          <div class="module-card-v2" id="mod-admission">
+            <div class="module-card-num">10</div>
+            <div class="module-card-icon"><i class="fa-solid fa-address-card"></i></div>
+            <h3 class="module-card-title">10. Admission Management</h3>
+            <p class="module-card-desc">Manage inquiry forms, counseling lead steps, document verification and onboarding.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Online Application Portals</li>
+                <li>Leads Management Panel</li>
+                <li>Documents Verification</li>
+                <li>Merit Lists Generator</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Module 11 -->
+          <div class="module-card-v2" id="mod-communication">
+            <div class="module-card-num">11</div>
+            <div class="module-card-icon"><i class="fa-solid fa-comments"></i></div>
+            <h3 class="module-card-title">11. Communication</h3>
+            <p class="module-card-desc">SMS broadcasts, email newsletters, circular boards, and notifications hub.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Instant SMS Broadcasts</li>
+                <li>Email Campaign Builder</li>
+                <li>Digital Circular Board</li>
+                <li>Push Notification System</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Module 12 -->
+          <div class="module-card-v2" id="mod-helpdesk">
+            <div class="module-card-num">12</div>
+            <div class="module-card-icon"><i class="fa-solid fa-headset"></i></div>
+            <h3 class="module-card-title">12. Helpdesk & Support</h3>
+            <p class="module-card-desc">Raise support tickets, track issues and resolve admin grievances quickly.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Admin Grievance Tickets</li>
+                <li>SLA Tracking Queue</li>
+                <li>FAQ Knowledgebase</li>
+                <li>Feedback Forms</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Module 13 -->
+          <div class="module-card-v2" id="mod-reports">
+            <div class="module-card-num">13</div>
+            <div class="module-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3 class="module-card-title">13. Reports & Analytics</h3>
+            <p class="module-card-desc">Custom reports, analytical graphs, dashboard grids and AI predictions.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Custom Table Exporter</li>
+                <li>Dashboard KPIs</li>
+                <li>Data Visualizations</li>
+                <li>AI Attendance Forecast</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Module 14 -->
+          <div class="module-card-v2" id="mod-admin">
+            <div class="module-card-num">14</div>
+            <div class="module-card-icon"><i class="fa-solid fa-user-shield"></i></div>
+            <h3 class="module-card-title">14. Administration</h3>
+            <p class="module-card-desc">Manage system roles, staff permissions, audit logs and system settings.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Granular Permission Grid</li>
+                <li>Activity Audit Logs</li>
+                <li>Data Backups Scheduler</li>
+                <li>Institution Configurations</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Module 15 -->
+          <div class="module-card-v2" id="mod-mobile">
+            <div class="module-card-num">15</div>
+            <div class="module-card-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <h3 class="module-card-title">15. Mobile App</h3>
+            <p class="module-card-desc">Native apps for students, parents and staff to stay updated on the go.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Student App Download</li>
+                <li>Teacher Portal</li>
+                <li>Parent Notifications</li>
+                <li>Offline Sync Database</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Module 16 -->
+          <div class="module-card-v2" id="mod-integration">
+            <div class="module-card-num">16</div>
+            <div class="module-card-icon"><i class="fa-solid fa-sliders"></i></div>
+            <h3 class="module-card-title">16. Integration & Automation</h3>
+            <p class="module-card-desc">API sync with third-party software and automated admin cron workflows.</p>
+            <button class="btn-module-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="module-accordion-content">
+              <ul>
+                <li>Active Directory Auth Sync</li>
+                <li>External SMS & Email APIs</li>
+                <li>Payment Gateway Hookups</li>
+                <li>Cron Jobs Automation</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div class="modules-cta-wrapper">
-          <a href="#features" class="btn-primary">View All Modules <i class="fa-solid fa-arrow-right"></i></a>
+        <!-- Horizontal Modules Trust Badges -->
+        <div class="modules-badges-bar">
+          <div class="badge-item"><i class="fa-solid fa-layer-group"></i> All-in-One Platform</div>
+          <div class="badge-item"><i class="fa-solid fa-shield-halved"></i> Role-Based Access</div>
+          <div class="badge-item"><i class="fa-solid fa-cloud"></i> Cloud Ready</div>
+          <div class="badge-item"><i class="fa-solid fa-arrows-spin"></i> Scalable & Flexible</div>
+          <div class="badge-item"><i class="fa-solid fa-certificate"></i> Secure & Compliant</div>
         </div>
       </div>
     </section>
@@ -496,7 +963,7 @@
           </div>
         </div>
         <div class="cta-actions">
-          <a href="#contact" class="btn-cta-white">Request Demo <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="request-demo.html" class="btn-cta-white">Request Demo <i class="fa-solid fa-arrow-right"></i></a>
           <a href="tel:+919876543210" class="btn-cta-transparent"><i class="fa-solid fa-phone"></i> Contact Us</a>
         </div>
       </div>
