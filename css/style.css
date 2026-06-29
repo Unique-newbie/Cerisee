@@ -91,6 +91,7 @@ body {
 
 .nav-list {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 30px;
 }
@@ -101,6 +102,9 @@ body {
   color: var(--text-main);
   position: relative;
   padding: 6px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .nav-link:hover, .nav-link.active {
