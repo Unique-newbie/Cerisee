@@ -733,7 +733,7 @@ body {
 .stats-section {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
   color: var(--white);
-  padding: 60px 20px;
+  padding: 30px 20px;
 }
 
 .stats-container {
